@@ -12,7 +12,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 1.6em;
+    padding: 1.6em 2.4em;
 }
 
 .logo {
@@ -55,7 +55,7 @@ a.active-link {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.6rem;
+    padding: 2.4em;
     text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -87,10 +87,47 @@ a.active-link {
     padding: 1.6em;
 }
 
+.about-page {
+    padding: 2.4em;
+}
+
+.about-hero-img {
+    width: 100%;
+}
+
+.about-header {
+    font-size: 2.5rem;
+}
+
+.about-text {
+    font-size: 1.4rem;
+}
+
+.about-find-van-btn {
+    background-color: #161616;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: .6em 1.2em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.explore-van-section {
+    background-color: #FFCC8D;
+    padding: 1.5em;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
 @media (max-width: 420px) {
     html {
         font-size: 14px;
     }
+    .header, .home-page, .about-page {
+        padding: 1.6em;
+    }
+
 }
 
 @media (max-width: 320px) {
