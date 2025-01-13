@@ -78,8 +78,23 @@ a.active-link {
     margin: 0;
 }
 
+.footer {
+    background-color: #252525;
+    color: #AAAAAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6em;
+}
+
 @media (max-width: 420px) {
     html {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 12px;
     }
 }
