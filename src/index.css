@@ -120,14 +120,63 @@ a.active-link {
     font-weight: bolder;
 }
 
-@media (max-width: 420px) {
+.van-page {
+    display: grid;
+    gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    padding: 2.4em;
+}
+
+.van-card {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.van-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.van-info {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.van-type {
+    color: #FFEAD0;
+    padding: .5em 1em;
+    margin: 0;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.4rem;
+    align-self: flex-start;
+}
+
+.simple {
+    background-color: #E17654;
+}
+
+ .luxury {
+    background-color: #161616;
+}
+
+ .rugged {
+    background-color: #115E59;
+}
+
+@media (max-width: 500px) {
     html {
         font-size: 14px;
     }
     .header, .home-page, .about-page {
         padding: 1.6em;
     }
-
+    .van-page {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
 }
 
 @media (max-width: 320px) {
