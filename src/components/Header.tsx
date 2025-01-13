@@ -3,7 +3,7 @@ import user from "../assets/user.png"
 
 export default function Header() {
     return <header className="header">
-        <Link className="logo" to="/">#ADVENTURE VANS</Link>
+        <Link className="logo" to="/">#VANLIFE</Link>
         <nav className="navbar">
             <NavLink
                 to="/host"

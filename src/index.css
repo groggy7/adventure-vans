@@ -1,5 +1,5 @@
 *, *::before, *::after {
-    box-sizing: border-box1;
+    box-sizing: border-box;
 }
 
 body {
@@ -45,4 +45,41 @@ a.active-link {
     text-decoration: underline;
     color: red;
     font-size: 1.1rem;
+}
+
+.home-page {
+    background: url('./assets/home.jpg') no-repeat center/cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
+    text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+.find-van-btn {
+    background-color: #FF8C38;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    max-width: 800px;
+    text-shadow: none;
+}
+
+.home-page h1 {
+    margin: 0;
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: 14px;
+    }
 }
