@@ -117,8 +117,12 @@ a.active-link {
 .explore-van-section {
     background-color: #FFCC8D;
     padding: 1.5em;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bolder;
+}
+
+.about-find-van-btn {
+    font-size: 1rem;
 }
 
 .van-page {
