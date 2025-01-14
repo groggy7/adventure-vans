@@ -126,16 +126,69 @@ a.active-link {
 }
 
 .van-page {
+    padding: 2.4em;
+}
+
+.van-page-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+.van-page-header {
+    margin: 0;
+    margin-bottom: 1;
+}
+
+.van-filter-btns {
+    display: flex;
+    gap: 1em;
+}
+
+.van-filter-btn {
+    border: none;
+    border-radius: 6px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    padding: .5em 1em;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.van-filter-btn.selected-simple {
+    background-color: #E17654;
+    color: #FFEAD0;
+}
+
+.van-filter-btn.selected-luxury {
+    background-color: #161616;
+    color: #FFEAD0;
+}
+
+.van-filter-btn.selected-rugged {
+    background-color: #115E59;
+    color: #FFEAD0;
+}
+
+.van-filter-btn.clear {
+    background-color: transparent;
+    text-decoration: underline;
+    margin-left: auto;
+}
+
+.van-cards {
     display: grid;
     gap: 3em;
     grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-    padding: 2.4em;
 }
 
 .van-card {
     display: flex;
     flex-direction: column;
     gap: .8em;
+    text-decoration: none;
+    color: black;
 }
 
 .van-image {
@@ -179,9 +232,10 @@ a.active-link {
     .header, .home-page, .about-page {
         padding: 1.6em;
     }
-    .van-page {
+    .van-cards {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
+    
 }
 
 @media (max-width: 320px) {
