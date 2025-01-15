@@ -25,14 +25,16 @@ export default function Vans() {
     const displayedVans = typeFilter ? vans?.filter(van => van.type === typeFilter) : vans
 
     const vanCards = displayedVans?.map(van => {
-        return <Link to={`/van/${van.id}`} className="van-card">
-            <img src={van.imageUrl} alt={van.description} className="van-image" />
+        return <div className="van-card">
+            <Link to={`/van/${van.id}`}>
+                <img src={van.imageUrl} alt={van.description} className="van-image" />
+            </Link>
             <div className="van-info">
                 <span>{van.name}</span>
                 <span>${van.price}/day</span>
             </div>
             <p className={`van-type ${van.type}`}>{van.type}</p>
-        </Link>
+        </div>
     })
 
     function handleFilterChange(type: string, filter: string) {
@@ -69,7 +71,7 @@ export default function Vans() {
                 <button 
                     className="van-filter-btn clear"
                     onClick={() => handleFilterChange('type', '')}>
-                Clear filters
+                Clear
                 </button>
             </div>
         </div>

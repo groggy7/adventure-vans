@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+button {
+    font-family: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -144,6 +148,7 @@ a.active-link {
 .van-filter-btns {
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 .van-filter-btn {
@@ -152,7 +157,7 @@ a.active-link {
     background-color: #FFEAD0;
     color: #4D4D4D;
     padding: .5em 1em;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
@@ -174,7 +179,6 @@ a.active-link {
 .van-filter-btn.clear {
     background-color: transparent;
     text-decoration: underline;
-    margin-left: auto;
 }
 
 .van-cards {
@@ -225,17 +229,55 @@ a.active-link {
     background-color: #115E59;
 }
 
+.van-detail-page {
+    padding: 2.4em;
+    color: #161616;
+}
+
+.van-detail-type {
+    display: block;
+    width: min-content;
+}
+
+.back-to-all-vans {
+    display: flex;
+    color: #201F1D;
+    gap: .5em;
+}
+
+.van-detail-img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2em;
+    border-radius: 8px;
+}
+
+.rent-btn {
+    width: 100%;
+    padding: .7em;
+    background-color: #FF8C38;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
 @media (max-width: 500px) {
     html {
         font-size: 14px;
     }
-    .header, .home-page, .about-page {
+
+    .header, 
+    .home-page,
+    .about-page,
+    .van-detail-page {
         padding: 1.6em;
     }
+
     .van-cards {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
-    
 }
 
 @media (max-width: 320px) {

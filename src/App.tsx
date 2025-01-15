@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Vans from './pages/Vans'
 import "./server"
+import VanDetail from './pages/VanDetail'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/host'  element={<h1>host page goes here</h1>} />
           <Route path='/about' element={<About />} />
           <Route path='/vans'  element={<Vans />} />
+          <Route path='/van/:id' element={<VanDetail />} />
           <Route path='/profile' element={<h1>profile page goes here</h1>} />
         </Route>
       </Routes>
