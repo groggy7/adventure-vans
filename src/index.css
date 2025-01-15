@@ -6,6 +6,18 @@ button {
     font-family: inherit;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right-aligned {
+    margin-left: auto;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -263,6 +275,143 @@ a.active-link {
     cursor: pointer;
 }
 
+.host-nav-bar {
+    display: flex;
+    gap: 1em;
+    padding: 1em 2.4em;
+}
+
+.host-nav-bar a {
+    color: #4D4D4D;
+    font-size: 1.2rem;
+}
+
+.active-host-nav-link {
+    color: #161616;
+    font-weight: bold;
+}
+
+.dashboard-welcome {
+    background-color: #FFEAD0;
+    margin-top: 1.5em;
+}
+
+.dashboard-welcome > div,
+.dashboard-review > div,
+.dashboard-listed-vans > div {
+    padding: 2em 2.4em;
+}
+
+.dashboard-review {
+    background-color: #FFDDB2;
+}
+
+.dashboard-header {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.dashboard-header-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .4em;
+}
+
+.details-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.details-btn:hover {
+    text-decoration: underline;
+}
+
+.income {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: .4em;
+}
+
+.dashboard-review > div {
+    display: flex;
+    gap: 1em;
+}
+
+.dashboard-review > div > span {
+    font-size: 1.5rem;
+}
+
+.review-point {
+    margin-right: .2em;
+}
+
+.dashboard-listed-vans-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-listed-vans h2 {
+    font-size: 1.6rem;
+}
+
+.dashboard-listed-vans button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dashboard-listed-vans button:hover {
+    text-decoration: underline;
+}
+
+.host-van-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.host-van-card {
+    display: flex;
+    gap: 2em;
+    background-color: white;
+    padding: 1em 1.5em;
+}
+
+.host-van-card img {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.host-van-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8em;
+}
+
+.host-van-card-info * {
+    margin: 0;
+}
+
+.host-van-card-info h3 {
+    font-size: 1.4rem;
+}
+
+.host-van-card-info p {
+    font-size: 1.1rem;
+}
+
+.host-van-card .edit-btn {
+    font-size: 1.3rem;
+    align-self: center;
+}
+
 @media (max-width: 500px) {
     html {
         font-size: 14px;
@@ -271,7 +420,11 @@ a.active-link {
     .header, 
     .home-page,
     .about-page,
-    .van-detail-page {
+    .van-detail-page,
+    .host-nav-bar,
+    .dashboard-welcome > div,
+    .dashboard-review > div,
+    .dashboard-listed-vans > div  {
         padding: 1.6em;
     }
 
@@ -280,7 +433,7 @@ a.active-link {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     html {
         font-size: 12px;
     }
