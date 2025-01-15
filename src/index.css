@@ -412,6 +412,10 @@ a.active-link {
     align-self: center;
 }
 
+.host-van-page.larger-text {
+    font-size: 2rem;
+}
+
 @media (max-width: 500px) {
     html {
         font-size: 14px;
