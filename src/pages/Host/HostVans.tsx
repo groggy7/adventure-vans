@@ -20,23 +20,23 @@ export default function HostVans() {
     }, [])
 
     const vanCards = vans?.map(van => {
-        return <div className="host-van-card" key={van.id}>
-            <img src={van.imageUrl} alt={van.description} />
-            <div className="host-van-card-info">
+        return <div className="flex gap-8 bg-white py-4 px-6" key={van.id}>
+            <img src={van.imageUrl} alt={van.description} className="w-[120px] rounded-lg" />
+            <div className="flex flex-col justify-center gap-3">
                 <h3>{van.name}</h3>
                 <p>${van.price}/day</p>
             </div>
-            <button className="edit-btn right-aligned">Edit</button>
+            <button className="ml-auto">Edit</button>
         </div>
     })
 
-    return <div className="dashboard-listed-vans">
-        <div>
-            <div className="dashboard-listed-vans-header">
-                <h2 className="host-van-page larger-text">Your listed vans</h2>
+    return <div>
+        <div className="py-8 px-10 flex flex-col gap-4">
+            <div className="flex justify-between">
+                <h2 className="text-2xl">Your listed vans</h2>
                 <button>View all</button>
             </div>
-            <div className="host-van-cards">
+            <div className="flex flex-col gap-4">
                 {vanCards}
             </div>
         </div>

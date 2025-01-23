@@ -25,15 +25,24 @@ export default function VanDetail() {
 
     return !van ? 
         <h1>Loading...</h1> : 
-        <div className="van-detail-page">
-            <Link className="back-to-all-vans" to='/vans'>
-                <img src={back} alt="back button" />
+        <div className="p-10 text-[#161616] flex flex-col gap-4">
+            <Link className="flex text-[#201F1D] gap-2" to='/vans'>
+                <img src={back} alt="back button" className="w-5" />
                 <p>Back to all vans</p>
             </Link>
-            <img src={van.imageUrl} alt={van.description} className="van-detail-img"/>
-            <p className={`van-type ${van.type} van-detail-type`}>{van.type}</p>
-            <h1>{van.name}</h1>
+            <img src={van.imageUrl} alt={van.description} className="w-full max-w-[600px] rounded-lg"/>
+            <p className={`text-[#FFEAD0] py-2 px-4 rounded-lg inline-block text-xl self-start ${{
+                simple: 'bg-[#E17654]',
+                luxury: 'bg-[#161616]',
+                rugged: 'bg-[#115E59]'
+            }[van.type]}`}>{van.type}</p>
+            <h1 className="text-xl">{van.name}</h1>
             <p>{van.description}</p>
-            <button className="rent-btn">Rent this van</button>
+            <button className="w-full p-3 bg-[#FF8C38] text-white rounded-lg border-none text-2xl cursor-pointer">Rent this van</button>
         </div>
 }
+/* {
+    simple: 'bg-[#E17654]',
+    luxury: 'bg-[#161616]',
+    rugged: 'bg-[#115E59]'
+}[van.type] */
