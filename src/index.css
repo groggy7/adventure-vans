@@ -18,92 +18,6 @@ button {
     margin-left: auto;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #FFF7ED;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.25em 2.4em;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: black;
-}
-
-.navbar {
-    display: flex;
-    gap: .7em;
-    align-items: center;
-}
-
-.navbar a {
-    text-decoration: none;
-    font-weight: 700;
-    color: #4D4D4D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar a img {
-    width: 20px;   
-}
-
-a.active-link {
-    text-decoration: underline;
-    color: red;
-    font-size: 1.1rem;
-}
-
-.home-page {
-    background: url('./assets/home.jpg') no-repeat center/cover;
-    height: 80vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2.4em;
-    text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
-}
-
-.find-van-btn {
-    background-color: #FF8C38;
-    color: white;
-    padding: 1em;
-    width: 100%;
-    border-radius: 8px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.5em;
-    max-width: 800px;
-    text-shadow: none;
-}
-
-.home-page h1 {
-    margin: 0;
-}
-
-.footer {
-    background-color: #252525;
-    color: #AAAAAA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.6em;
-    font-size: 1.2rem;
-}
-
 .about-page {
     padding: 2.4em;
 }
@@ -275,22 +189,6 @@ a.active-link {
     cursor: pointer;
 }
 
-.host-nav-bar {
-    display: flex;
-    gap: 1em;
-    padding: 1em 2.4em;
-}
-
-.host-nav-bar a {
-    color: #4D4D4D;
-    font-size: 1.2rem;
-}
-
-.active-host-nav-link {
-    color: #161616;
-    font-weight: bold;
-}
-
 .dashboard-welcome {
     background-color: #FFEAD0;
     margin-top: 1.5em;
@@ -442,3 +340,7 @@ a.active-link {
         font-size: 12px;
     }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
