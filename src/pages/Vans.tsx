@@ -87,7 +87,7 @@ export default function Vans() {
                 </button>
             </div>
         </div>
-        <div className="grid gap-12 grid-cols-[repeat(auto-fill,minmax(420px,1fr))]">
+        <div className="grid gap-12 grid-cols-[1fr] sm:grid-cols-[repeat(auto-fill,minmax(420px,1fr))]">
             {vanCards}
         </div>
     </div> 
